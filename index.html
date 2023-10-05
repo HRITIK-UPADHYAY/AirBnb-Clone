@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Airbnb Clone </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="./Images/Version=Home.png" alt="">
+    </header>
+
+    <main>
+        <!-- Search bar, listings, and map will go here -->
+        <div id="search-bar">
+            <div class="inputs"> 
+                <input id="destination" class="search-input" type="text" placeholder="Search Destination...">
+                <input id="check-in" class="search-input"  type="date" placeholder="Check In...">
+                <input id="check-out" class="search-input"  type="date" placeholder="Check Out...">
+                <input id="adults" class="search-input"  type="text" placeholder="No Of People...">
+            </div>
+           
+            <button id="search-button">Search</button>
+        </div>
+
+        <div class="home-image">
+            <img src="./Images/Big Card.png" alt="">
+        </div>
+
+
+        <div id="hotelLists">
+
+            <div id="hotels">
+                <!-- Listings will be appended here -->
+                <!-- <div id="listings-container">
+                    <img src="${listing.image}" alt="${listing.title}">
+                    <div class="listing-info">
+                        <div class="name">
+                            <p> Entire Home in ${}</p>
+                            <h2>${listing.title}</h2>
+                        </div>
+
+                        <div class="room-info">
+                            <p>${listing.propertyType} · beds · bathrooms</p>
+                        </div>
+                    
+                        <div class="priceNdRatings">
+                            <p>5.0</p>
+                            <p>${} (Reviews)</p>
+                            <p class="price"> 325/night </p>
+                        </div>
+                    </div>
+                    <button> Show Booking Cost Breakdown </button>
+                </div> -->    
+            </div>
+
+            <iframe id="map" src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" frameborder="0" style="border:0"></iframe>
+
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <!-- Footer will go here -->
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
